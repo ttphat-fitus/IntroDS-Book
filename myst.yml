@@ -1,0 +1,19 @@
+# Cấu hình Jupyter Book 2 (mystmd). Build local: jupyter-book start --execute
+version: 1
+project:
+  title: "Nhập môn Khoa học Dữ liệu - Nhóm 15"
+  description: Báo cáo đồ án arXiv - crawling, parsing, reference matching
+  authors:
+    - name: Nhóm 15
+  # github: https://github.com/<org>/introds-book
+  jupyter: true
+  toc:
+    - file: intro.md
+    - title: "Milestone 1 - Data Crawling"
+      children:
+        - file: m1/crawling.ipynb
+    # - title: "Milestone 2 - Parsing & Standardization"
+    #   children:
+    #     - file: m2/parsing.ipynb
+site:
+  template: book-theme

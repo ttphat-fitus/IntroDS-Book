@@ -1,5 +1,5 @@
-ipykernel
-pandas
-pyarrow
-matplotlib
-jinja2
+ipykernel==7.4.0
+pandas==3.1.0
+pyarrow==26.0.0
+matplotlib==3.11.2
+jinja2==3.1.6

@@ -6,7 +6,13 @@ project:
   authors:
     - name: Group 15
   github: https://github.com/ttphat-fitus/IntroDS-Book
-  jupyter: true
+  # Live code: the "Run" button starts the notebook kernel on mybinder.org (requirements.txt,
+  # runtime.txt). mybinder.org servers accept cross-origin requests, so it also works from
+  # https://introds.opuslace.dev.
+  jupyter:
+    binder:
+      repo: ttphat-fitus/IntroDS-Book
+      ref: main
   toc:
     - file: intro.md
     - title: "Milestone 1 - Data Crawling"
@@ -14,3 +20,5 @@ project:
         - file: m1/crawling.ipynb
 site:
   template: book-theme
+  options:
+    logo_text: introDS - Group 15

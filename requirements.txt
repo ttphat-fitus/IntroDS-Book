@@ -2,4 +2,4 @@ ipykernel
 pandas
 pyarrow
 matplotlib
-plotly
+jinja2

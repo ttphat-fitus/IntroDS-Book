@@ -1,0 +1,46 @@
+{
+  "member": "m5",
+  "ids_assigned": 5000,
+  "papers_found": 5000,
+  "papers_success": 5000,
+  "paper_success_rate": 1.0,
+  "versions_total": 7471,
+  "versions_by_status": {
+    "ok": 6916,
+    "no_tex": 513,
+    "missing": 42
+  },
+  "versions_by_format": {
+    "tar": 6915,
+    "pdf": 513,
+    "gzip": 1
+  },
+  "versions_by_origin": {
+    "export": 7471
+  },
+  "versions_with_bbl": 1283,
+  "avg_versions_per_paper": 1.4942,
+  "avg_paper_bytes_download": 5221964.351811087,
+  "avg_paper_bytes_before_figure_removal": 6274893.307184311,
+  "avg_paper_bytes_after_figure_removal": 308906.477686612,
+  "avg_references_per_paper": 38.21870618866413,
+  "avg_arxiv_references_per_paper": 16.898858401762467,
+  "reference_metadata_success_rate": 0.9986,
+  "time_discovery_total_s": 203.50002617300015,
+  "time_src_total_s": 38917.66754061093,
+  "time_refs_total_s": 976.9487753169999,
+  "time_s3_total_s": 0.0,
+  "time_rate_limit_wait_s": 20938.990707815876,
+  "time_per_paper_avg_s": 8.010532709102131,
+  "time_wall_total_s": 39128.03012442589,
+  "ram_peak_bytes": 261861376,
+  "ram_avg_bytes": 193403134.75147596,
+  "disk_max_bytes": 1630596165,
+  "output_raw_bytes": 1543605669,
+  "output_db_bytes": 82857984,
+  "batch_share_s": {
+    "discover": 0.03544061758498784,
+    "refs": 0.19155858339549017,
+    "s3_per_version": 0.0
+  }
+}

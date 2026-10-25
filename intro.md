@@ -1,9 +1,13 @@
-# Giới thiệu
+# Introduction
 
-Báo cáo đồ án môn Nhập môn Khoa học Dữ liệu của Nhóm 15.
+Term project report of Group 15 for Introduction to Data Science (HCMUS).
 
-- Mã nguồn: <link repo introds>
-- Dataset: <link Hugging Face> (nộp ở Milestone 3)
+The project crawls the full-text LaTeX sources of our assigned arXiv papers (Milestone 1),
+parses every version into a hierarchical structure (Milestone 2), and matches citations to the
+crawled reference metadata with a machine learning pipeline evaluated by MRR@5 (Milestone 3).
 
-Mọi hình và bảng trong book được sinh lúc build từ các file thống kê nhỏ trong `data/`,
-do lệnh `python -m introds stats` của repo code xuất ra.
+- Source code: <https://github.com/ttphat-fitus/IntroDS>
+- Dataset: Hugging Face link, published in Milestone 3
+
+Every figure and table in this book is generated when the book is built, by notebooks that read
+the small statistics files in `data/` exported with `python -m introds stats`.

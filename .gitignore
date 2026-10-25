@@ -1,5 +1,29 @@
+# Build output and local environments
 _build/
+.venv/
+node_modules/
 .ipynb_checkpoints/
 __pycache__/
+*.pyc
+*_output.ipynb
 .DS_Store
-.venv/
+
+# Secrets
+.env
+
+# Large or raw data: the book only needs the small summary files in data/<milestone>/
+# (summary.json, *.parquet, time_*.txt) exported by `python -m introds stats`.
+**/raw/
+**/backup*/
+**/hf/
+*.sqlite
+*.sqlite-*
+*.db
+*.tar
+*.tar.*
+*.tgz
+*.gz
+*.zip
+*.7z
+*.pdf
+*.log

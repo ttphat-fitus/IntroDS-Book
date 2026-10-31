@@ -9,7 +9,7 @@ metadata with a machine learning pipeline evaluated by MRR@5.
 | Milestone | Topic | Status |
 |---|---|---|
 | 1 | [Data crawling](./m1/crawling.ipynb) | Done: 25,000 papers, 31,756 versions, 100% success |
-| 2 | Hierarchical parsing and standardization | Not started |
+| 2 | [Hierarchical parsing and standardization](./m2/parsing.ipynb) | Done: 30,054 versions parsed (100%), 11.9M elements, 1.0M BibTeX entries |
 | 3 | Reference matching pipeline | Not started |
 
 ## Team and ranges
@@ -28,7 +28,8 @@ Each member was assigned about 5,000 arXiv IDs.
 
 - Source code: <https://github.com/ttphat-fitus/IntroDS>
 - Dataset (Hugging Face, Parquet): [`ttphat/introds-arxiv`](https://huggingface.co/datasets/ttphat/introds-arxiv),
-  currently the `papers` and `references` tables; it becomes public with Milestone 3.
+  currently the `papers`, `references`, `elements`, `hierarchy` and `bibtex` tables; it becomes
+  public with Milestone 3.
 - This report: <https://introds.opuslace.dev> (source: <https://github.com/ttphat-fitus/IntroDS-Book>)
 
 ## How this book is built

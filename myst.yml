@@ -18,6 +18,9 @@ project:
     - title: "Milestone 1 - Data Crawling"
       children:
         - file: m1/crawling.ipynb
+    - title: "Milestone 2 - Parsing and Standardization"
+      children:
+        - file: m2/parsing.ipynb
 site:
   template: book-theme
   options:

@@ -43,7 +43,10 @@ jobs:
       - name: Install Jupyter Book (via myst)
         run: npm install -g jupyter-book
       - name: Build HTML Assets
-        run: jupyter-book build --html --execute
+        # Jupyter Book only prints ⛔️ when a notebook cannot run; fail the job instead of deploying empty outputs
+        run: |
+          jupyter-book build --html --execute 2>&1 | tee build.log
+          if grep -q "⛔️" build.log; then echo "::error::notebook execution failed (see ⛔️ lines)"; exit 1; fi
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
